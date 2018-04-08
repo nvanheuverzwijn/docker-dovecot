@@ -16,7 +16,7 @@ docker exec -it dovecot bash
 ```
 
 ## Environment Variable
-### OVECOT_DOVECOT_CONF
+### DOVECOT_DOVECOT_CONF
 ### DOVECOT_10_AUTH
 ### DOVECOT_10_MAIL
 ### DOVECOT_10_MASTER
