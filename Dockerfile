@@ -2,6 +2,8 @@ FROM debian:stretch-slim
 
 ENV ENTRYPOINT_ROOT="entrypoint" \
     DOVECOT_DOVECOT_CONF="" \
+    DOVECOT_DOVECOT_SQL_CONF_EXT="" \
+    DOVECOT_LDAP_CONF_EXT="" \
     DOVECOT_10_AUTH="" \
     DOVECOT_10_MAIL="" \
     DOVECOT_10_MASTER="" \
