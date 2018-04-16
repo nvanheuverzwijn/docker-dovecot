@@ -9,7 +9,6 @@ function env_var_to_file {
 
 env_var_to_file DOVECOT_DOVECOT_CONF /etc/dovecot/dovecot.conf
 env_var_to_file DOVECOT_DOVECOT_SQL_CONF_EXT /etc/dovecot/dovecot-sql.conf.ext
-env_var_to_file DOVECOT_DOVECOT_DICT_SQL_CONF_EXT /etc/dovecot/dovecot-dict-sql.conf.ext
 env_var_to_file DOVECOT_LDAP_CONF_EXT /etc/dovecot/conf.d/ldap.conf.ext
 env_var_to_file DOVECOT_10_AUTH /etc/dovecot/conf.d/10-auth.conf
 env_var_to_file DOVECOT_10_MAIL /etc/dovecot/conf.d/10-mail.conf
