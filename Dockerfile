@@ -22,6 +22,7 @@ RUN apt-get update && \
       busybox-syslogd \
       ca-certificates \
       dovecot-imapd \
+      dovecot-mysql \
       dovecot-lmtpd \
       dovecot-managesieved \
       dovecot-sieve \
