@@ -18,7 +18,7 @@ docker exec -it dovecot bash
 ## Users
 List of users created in this container.
 ### vmail
-uid=5000 gid=5000
+uid=5000 gid=5000 groups=mail
 ### dovecot
 uid=101 gid=101
 
