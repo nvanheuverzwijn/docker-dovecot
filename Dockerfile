@@ -1,6 +1,7 @@
 FROM debian:stretch-slim
 
 ENV ENTRYPOINT_ROOT="entrypoint" \
+    DEBIAN_FRONTEND="noninteractive" \
     DOVECOT_DOVECOT_CONF="" \
     DOVECOT_DOVECOT_SQL_CONF_EXT="" \
     DOVECOT_LDAP_CONF_EXT="" \
@@ -30,7 +31,7 @@ RUN apt-get update && \
       procps \
     && rm -rf /var/lib/apt/lists/*
 
-RUN useradd -u 5000 -U -m -d /var/mail vmail
+RUN useradd -u 5000 -U -m -d /var/mail --groups mail vmail
 
 ADD https://github.com/kronostechnologies/docker-init-entrypoint/releases/download/1.3.0/entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
