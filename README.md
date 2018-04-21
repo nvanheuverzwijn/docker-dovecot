@@ -15,6 +15,13 @@ Start a shell inside the container:
 docker exec -it dovecot bash
 ```
 
+## Users
+List of users created in this container.
+### vmail
+uid=5000 gid=5000
+### dovecot
+uid=101 gid=101
+
 ## Environment Variable
 ### DOVECOT_DOVECOT_CONF
 ### DOVECOT_DOVECOT_SQL_CONF_EXT
